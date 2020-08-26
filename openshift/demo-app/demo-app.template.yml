@@ -58,7 +58,7 @@ objects:
     labels:
       app: demo-app
   spec:
-    host: demo-app-codeflairdevopsworkshop.apps.us-east-2.starter.openshift-online.com.starter.openshift-online.com
+    host: demo-app-codeflairdevopsworkshop.apps.us-east-2.starter.openshift-online.com
     to:
       kind: Service
       name: demo-app
@@ -66,5 +66,5 @@ objects:
       targetPort: 8080
     tls:
       termination: edge
-      insecureEdgeTerminationPolicy: Allow
+      insecureEdgeTerminationPolicy: Redirect
 
